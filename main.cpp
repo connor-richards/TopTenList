@@ -13,6 +13,10 @@ int main()
     cpp.text = "C++";
     cpp.url = "https://www.cplusplus.com/";
     languages->set_at(1, cpp);
+    
+    languages->print();
+
+    delete languages;
 
     return 0;
 }
