@@ -15,13 +15,6 @@ int main()
     cpp.text = "C++";
     cpp.url = "https://www.cplusplus.com/";
     languages->set_at(1, cpp);
-    
-    languages->display_forward();
-    cout << "------------------------------------\n";
-    languages->display_backward();
-
-    delete languages;
-    /*
     cpp.text = "Python";
     cpp.url = "https://www.python.org/";
     languages->set_at(2, cpp);
@@ -56,7 +49,9 @@ int main()
 
     emoticons->display_backward();
     languages->display_forward();
-    */
+
+    delete emoticons;
+    delete languages;
 
     return 0;
 }

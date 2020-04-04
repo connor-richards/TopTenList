@@ -23,14 +23,12 @@ Hyperlink TopTenList::get(int index)
 
 void TopTenList::display_forward() {
   for (int idx=0; idx < _list.size(); idx++) {
-    std::cout << "Name <" << _list[idx].text << "> URL <";
-    std::cout << _list[idx].url << ">" << std::endl;
+    std::cout << idx+1 <<  ". <a href=\"" << _list[idx].url << "\">" << _list[idx].text << "</a>\n";
   }
 }
 
 void TopTenList::display_backward() {
   for (int idx=_list.size()-1; idx >= 0; idx--) {
-    std::cout << "Name <" << _list[idx].text << "> URL <";
-    std::cout << _list[idx].url << ">" << std::endl;
+    std::cout << idx+1 <<  ". <a href=\"" << _list[idx].url << "\">" << _list[idx].text << "</a>\n";
   }
 }
